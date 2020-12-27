@@ -17,7 +17,7 @@ if __name__ == '__main__':
     layer_cnt = 8
     patch_pix = 4
 
-    model = ViR( #ViT
+    model = ViT( #ViT
         image_pix = 32,
         patch_pix = patch_pix,
         class_cnt = 10,
@@ -105,7 +105,7 @@ if __name__ == '__main__':
         torch.save(model, "model.dat")
 
     
-    draw_result(epochs, train_losses, test_losses, accs, f"ViR_ly{layer_cnt}_px{patch_pix}")
+    draw_result(epochs, train_losses, test_losses, accs, f"ViT_ly{layer_cnt}_px{patch_pix}")
     
     
 

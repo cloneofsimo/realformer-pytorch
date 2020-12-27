@@ -27,7 +27,7 @@ class EncoderBlock(nn.Module):
     def mha(self, x):
         B, T, _ = x.shape
         x = x.reshape(B, T, self.head_cnt, self.emb_s)
-        k, q, v = torch.split(self.kqv(x), emb_s, dim = -1) # B, T, h, emb_s
+        k, q, v = torch.split(self.kqv(x), self.emb_s, dim = -1) # B, T, h, emb_s
         att = F.softmax(torch.einsum('bihk,bjhk->bijh', q, k)/self.emb_s**0.5, dim = 2) #B, T, T, h sum on dim 1 = 1
         res = torch.einsum('btih,bihs->bths', att, v).reshape(B, T, -1) #B, T, h * emb_s
         return self.dp(self.proj(res))
