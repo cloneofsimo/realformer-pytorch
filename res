@@ -1,0 +1,10 @@
+epoch 1 : Train loss : 1.7443, Test loss : 1.3467 test_acc : 0.5025
+epoch 2 : Train loss : 1.3177, Test loss : 1.1797 test_acc : 0.5692
+epoch 3 : Train loss : 1.1527, Test loss : 1.0905 test_acc : 0.6004
+epoch 4 : Train loss : 1.0535, Test loss : 1.0526 test_acc : 0.6159
+epoch 5 : Train loss : 0.9949, Test loss : 1.0191 test_acc : 0.6320
+epoch 6 : Train loss : 0.9580, Test loss : 1.0085 test_acc : 0.6348
+epoch 7 : Train loss : 0.9361, Test loss : 1.0020 test_acc : 0.6377
+epoch 8 : Train loss : 0.9215, Test loss : 0.9937 test_acc : 0.6440
+epoch 9 : Train loss : 0.9106, Test loss : 0.9932 test_acc : 0.6425
+epoch 10 : Train loss : 0.9014, Test loss : 0.9871 test_acc : 0.6459
